@@ -1,12 +1,13 @@
 {
+  "originHash" : "2f4dcced3e8e9a5c17c49fcd74e7180448379ab338504d105e95a17237d02a44",
   "pins" : [
     {
       "identity" : "cpx-research-sdk-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MakeOpinionGmbH/cpx-research-SDK-Ios.git",
       "state" : {
-        "revision" : "40332fc60da5b918c2d9336c80a6e58123db50a0",
-        "version" : "1.5.2"
+        "revision" : "6f3b94db3e3a81f1c549b031af70ad9ac66c10d0",
+        "version" : "1.6.0"
       }
     },
     {
@@ -14,10 +15,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kaishin/Gifu.git",
       "state" : {
-        "revision" : "51f2eab32903e336f590c013267cfa4d7f8b06c4",
-        "version" : "3.3.1"
+        "revision" : "46434cd816f035271beb16d80f7bc91381cbd8e4",
+        "version" : "3.5.1"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

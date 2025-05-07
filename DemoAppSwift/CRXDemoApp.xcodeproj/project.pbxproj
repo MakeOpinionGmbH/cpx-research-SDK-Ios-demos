@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6565DE5A270F47360021891F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6565DE59270F47360021891F /* UIColor+Hex.swift */; };
-		6582B0E62825761800289799 /* CPXResearch in Frameworks */ = {isa = PBXBuildFile; productRef = 6582B0E52825761800289799 /* CPXResearch */; };
+		656DD14F2C847CFF004C740D /* CPXResearch in Frameworks */ = {isa = PBXBuildFile; productRef = 656DD14E2C847CFF004C740D /* CPXResearch */; };
+		6585AE3B2DBE7BCA008061E3 /* CPXResearch in Frameworks */ = {isa = PBXBuildFile; productRef = 6585AE3A2DBE7BCA008061E3 /* CPXResearch */; };
 		65C6454225D59C1A0039C854 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6454125D59C1A0039C854 /* UITableView+Register.swift */; };
 		65C6454725D59D7B0039C854 /* SurveyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6454525D59D7B0039C854 /* SurveyTableViewCell.swift */; };
 		65C6454825D59D7B0039C854 /* SurveyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65C6454625D59D7B0039C854 /* SurveyTableViewCell.xib */; };
@@ -40,20 +41,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6582B0E62825761800289799 /* CPXResearch in Frameworks */,
+				656DD14F2C847CFF004C740D /* CPXResearch in Frameworks */,
+				6585AE3B2DBE7BCA008061E3 /* CPXResearch in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6554E7DD282042E40022B186 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		65C6454325D59C480039C854 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +70,6 @@
 		65F3D4ED25D1245500D14A1E = {
 			isa = PBXGroup;
 			children = (
-				6554E7DD282042E40022B186 /* Packages */,
 				65F3D4F825D1245500D14A1E /* CRXDemoApp */,
 				65F3D4F725D1245500D14A1E /* Products */,
 				65F3D50E25D1255900D14A1E /* Frameworks */,
@@ -130,7 +124,8 @@
 			);
 			name = CRXDemoApp;
 			packageProductDependencies = (
-				6582B0E52825761800289799 /* CPXResearch */,
+				656DD14E2C847CFF004C740D /* CPXResearch */,
+				6585AE3A2DBE7BCA008061E3 /* CPXResearch */,
 			);
 			productName = MakeOpionionDemoApp;
 			productReference = 65F3D4F625D1245500D14A1E /* CRXDemoApp.app */;
@@ -160,7 +155,7 @@
 			);
 			mainGroup = 65F3D4ED25D1245500D14A1E;
 			packageReferences = (
-				6582B0E42825761800289799 /* XCRemoteSwiftPackageReference "cpx-research-SDK-Ios" */,
+				6585AE392DBE7BCA008061E3 /* XCRemoteSwiftPackageReference "cpx-research-SDK-Ios" */,
 			);
 			productRefGroup = 65F3D4F725D1245500D14A1E /* Products */;
 			projectDirPath = "";
@@ -399,20 +394,24 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6582B0E42825761800289799 /* XCRemoteSwiftPackageReference "cpx-research-SDK-Ios" */ = {
+		6585AE392DBE7BCA008061E3 /* XCRemoteSwiftPackageReference "cpx-research-SDK-Ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MakeOpinionGmbH/cpx-research-SDK-Ios.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.5.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6582B0E52825761800289799 /* CPXResearch */ = {
+		656DD14E2C847CFF004C740D /* CPXResearch */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6582B0E42825761800289799 /* XCRemoteSwiftPackageReference "cpx-research-SDK-Ios" */;
+			productName = CPXResearch;
+		};
+		6585AE3A2DBE7BCA008061E3 /* CPXResearch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6585AE392DBE7BCA008061E3 /* XCRemoteSwiftPackageReference "cpx-research-SDK-Ios" */;
 			productName = CPXResearch;
 		};
 /* End XCSwiftPackageProductDependency section */
