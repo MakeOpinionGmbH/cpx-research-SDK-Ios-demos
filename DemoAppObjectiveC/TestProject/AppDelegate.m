@@ -24,7 +24,7 @@
                                                 textColor:@"#ffffff"
                                           backgroundColor:@"#00af20"
                                            roundedCorners:YES];
-
+    
     CPXLegacyConfiguration* config =
     [[CPXLegacyConfiguration alloc] initWithAppId:@"5878"
                                         extUserId:@"1"
@@ -32,7 +32,7 @@
                                             email:nil
                                            subId1:nil
                                            subId2:nil
-                                        extraInfo:nil
+                                        extraInfo:@[@"value1"]
                                             style:style];
     [CPXResearch setupWith:config];
 

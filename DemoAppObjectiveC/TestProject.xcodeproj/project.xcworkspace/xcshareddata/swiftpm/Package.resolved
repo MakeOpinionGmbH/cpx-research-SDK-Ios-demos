@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MakeOpinionGmbH/cpx-research-SDK-Ios.git",
       "state" : {
-        "revision" : "6f3b94db3e3a81f1c549b031af70ad9ac66c10d0",
-        "version" : "1.6.0"
+        "revision" : "9bd9c43810ef8c57226b9a3911847304838a6dfc",
+        "version" : "1.6.1"
       }
     },
     {
