@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6502A685302E1B2100448B86 /* CPXResearch in Frameworks */ = {isa = PBXBuildFile; productRef = 6502A684302E1B2100448B86 /* CPXResearch */; };
+		6502A688302E1B4000448B86 /* CPXResearch in Frameworks */ = {isa = PBXBuildFile; productRef = 6502A687302E1B4000448B86 /* CPXResearch */; };
 		653380F725DBB4C0002A8E3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 653380F625DBB4C0002A8E3C /* AppDelegate.m */; };
 		653380FA25DBB4C0002A8E3C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 653380F925DBB4C0002A8E3C /* SceneDelegate.m */; };
 		653380FD25DBB4C0002A8E3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653380FC25DBB4C0002A8E3C /* ViewController.m */; };
@@ -14,7 +16,7 @@
 		6533810225DBB4C2002A8E3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6533810125DBB4C2002A8E3C /* Assets.xcassets */; };
 		6533810525DBB4C2002A8E3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6533810325DBB4C2002A8E3C /* LaunchScreen.storyboard */; };
 		6533810825DBB4C2002A8E3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6533810725DBB4C2002A8E3C /* main.m */; };
-		6582B0E92825781100289799 /* CPXResearch in Frameworks */ = {isa = PBXBuildFile; productRef = 6582B0E82825781100289799 /* CPXResearch */; };
+		65DC8BB63028E70100725E29 /* CPXResearch in Frameworks */ = {isa = PBXBuildFile; productRef = 65DC8BB53028E70100725E29 /* CPXResearch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6582B0E92825781100289799 /* CPXResearch in Frameworks */,
+				65DC8BB63028E70100725E29 /* CPXResearch in Frameworks */,
+				6502A685302E1B2100448B86 /* CPXResearch in Frameworks */,
+				6502A688302E1B4000448B86 /* CPXResearch in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +99,9 @@
 			);
 			name = TestProject;
 			packageProductDependencies = (
-				6582B0E82825781100289799 /* CPXResearch */,
+				65DC8BB53028E70100725E29 /* CPXResearch */,
+				6502A684302E1B2100448B86 /* CPXResearch */,
+				6502A687302E1B4000448B86 /* CPXResearch */,
 			);
 			productName = TestProject;
 			productReference = 653380F225DBB4C0002A8E3C /* TestProject.app */;
@@ -125,7 +131,7 @@
 			);
 			mainGroup = 653380E925DBB4C0002A8E3C;
 			packageReferences = (
-				6582B0E72825781100289799 /* XCRemoteSwiftPackageReference "cpx-research-SDK-Ios" */,
+				6502A686302E1B4000448B86 /* XCRemoteSwiftPackageReference "cpx-research-SDK-Ios" */,
 			);
 			productRefGroup = 653380F325DBB4C0002A8E3C /* Products */;
 			projectDirPath = "";
@@ -359,20 +365,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6582B0E72825781100289799 /* XCRemoteSwiftPackageReference "cpx-research-SDK-Ios" */ = {
+		6502A686302E1B4000448B86 /* XCRemoteSwiftPackageReference "cpx-research-SDK-Ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/MakeOpinionGmbH/cpx-research-SDK-Ios.git";
+			repositoryURL = "https://github.com/MakeOpinionGmbH/cpx-research-SDK-Ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.8.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6582B0E82825781100289799 /* CPXResearch */ = {
+		6502A684302E1B2100448B86 /* CPXResearch */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6582B0E72825781100289799 /* XCRemoteSwiftPackageReference "cpx-research-SDK-Ios" */;
+			productName = CPXResearch;
+		};
+		6502A687302E1B4000448B86 /* CPXResearch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6502A686302E1B4000448B86 /* XCRemoteSwiftPackageReference "cpx-research-SDK-Ios" */;
+			productName = CPXResearch;
+		};
+		65DC8BB53028E70100725E29 /* CPXResearch */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = CPXResearch;
 		};
 /* End XCSwiftPackageProductDependency section */

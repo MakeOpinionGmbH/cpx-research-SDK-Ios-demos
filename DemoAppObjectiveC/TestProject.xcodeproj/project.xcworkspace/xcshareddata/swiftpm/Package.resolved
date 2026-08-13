@@ -1,13 +1,13 @@
 {
-  "originHash" : "2f4dcced3e8e9a5c17c49fcd74e7180448379ab338504d105e95a17237d02a44",
+  "originHash" : "5ba98c4ea5752253a14c0717c172997b9879fe8d7bf1e3669d51b189e654f58e",
   "pins" : [
     {
       "identity" : "cpx-research-sdk-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/MakeOpinionGmbH/cpx-research-SDK-Ios.git",
+      "location" : "https://github.com/MakeOpinionGmbH/cpx-research-SDK-Ios",
       "state" : {
-        "revision" : "9bd9c43810ef8c57226b9a3911847304838a6dfc",
-        "version" : "1.6.1"
+        "revision" : "07bfcf3514ae14bcf5b107bea1e7b6a9bbcba728",
+        "version" : "1.8.0"
       }
     },
     {

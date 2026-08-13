@@ -25,15 +25,23 @@
                                           backgroundColor:@"#00af20"
                                            roundedCorners:YES];
     
+    CPXLegacyWebViewConfiguration* webConfig =
+    [[CPXLegacyWebViewConfiguration alloc] initWithAllowHelpButton:false
+                                                   allowInfoButton:false
+                                               allowSettingsButton:false
+                                                   allowHomeButton:false
+                                                 allowSafariButton:false];
+    
     CPXLegacyConfiguration* config =
-    [[CPXLegacyConfiguration alloc] initWithAppId:@"5878"
+    [[CPXLegacyConfiguration alloc] initWithAppId:@"1" // Your App Id from the CPX Research Dashboard
                                         extUserId:@"1"
-                                       secureHash:@"secureHash"
+                                       secureHash:@"secureHash" // Your Security Hash from the CPX Research Dashboard
                                             email:nil
                                            subId1:nil
                                            subId2:nil
                                         extraInfo:@[@"value1"]
-                                            style:style];
+                                            style:style
+                             webViewConfiguration:webConfig];
     [CPXResearch setupWith:config];
 
     return YES;

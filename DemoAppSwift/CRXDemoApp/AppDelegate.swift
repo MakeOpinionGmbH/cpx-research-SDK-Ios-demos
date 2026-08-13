@@ -12,17 +12,29 @@ import CPXResearch
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
-        let style = CPXConfiguration.CPXStyleConfiguration(position: .side(position: .right, size: .normal),
-                                                           text: "Verdiene bis zu 3 Coins in<br> 4 Minuten mit Umfragen",
-                                                           textColor: "#ffffff",
-                                                           backgroundColor: "#00af20",
-                                                           roundedCorners: true)
-
-        let config = CPXConfiguration(appId: "5878",
-                                      extUserId: "1",
-                                      secureHash: "secureHash",
-                                      style: style)
+        
+        let style = CPXConfiguration.CPXStyleConfiguration(
+            position: .side(position: .right, size: .normal),
+            text: "Verdiene bis zu 3 Coins in<br> 4 Minuten mit Umfragen",
+            textColor: "#ffffff",
+            backgroundColor: "#00af20",
+            roundedCorners: true
+        )
+        
+        let webViewConfiguration = CPXConfiguration.CPXWebViewConfiguration(
+            allowHelpButton: true, // allows the help button to be visible when show the survey list or a specific survey
+            allowSettingsButton: true, // allows the settings button to be visible when show the survey list or a specific survey
+            allowHomeButton: true, // allows the home button to be visible when show the survey list or a specific survey
+            allowSafariButton: true // allows the Safari button to be visible when show the survey list or a specific survey
+        )
+        
+        let config = CPXConfiguration(
+            appId: "1",
+            extUserId: "1",
+            secureHash: "secureHash",
+            style: style,
+            webViewConfiguration: webViewConfiguration
+        )
         CPXResearch.setup(with: config)
 
         return true
